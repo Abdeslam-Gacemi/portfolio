@@ -9,7 +9,7 @@ function initCursor(default_pointer = "point-pointer", delay = 80) {
         pointerContainer.appendChild(pointerB)
         // document.body.setAttribute('cursor-style', default_pointer)
         document.body.appendChild(pointerContainer)
-        document.body.style.cursor = 'none'
+        // document.body.style.cursor = 'none'
         document.addEventListener('mousemove', event => {
             console.log('moved')
             mouseCursorMove(event)

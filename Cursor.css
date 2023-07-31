@@ -9,7 +9,7 @@
     left: 0;
     width: 10px;
     aspect-ratio: 1;
-    background-color: #3af4c2;
+    background-color: #9DE756;
     border-radius: 100%;
     transition: opacity, background, background-color, background-image, width, height, scale .3s cubic-bezier(1,-0.04, 0.58, 1);
     scale: 1;
@@ -22,7 +22,7 @@
     left: 0;
     width: 60px;
     aspect-ratio: 1;
-    border: 1px solid #3af4c2;
+    border: 1px solid #9DE756;
     border-radius: 100%;
     transition: opacity, background, width, height, scale .3s cubic-bezier(1,-0.04, 0.58, 1);
     scale: 1;
@@ -59,4 +59,5 @@
 .pointer > *.green-pointer {
     background-color: limegreen;
     animation: bubble 1s ease infinite;
+    mix-blend-mode: normal!important;
 }

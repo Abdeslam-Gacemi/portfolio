@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Cursor.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav data-aos="fade-down">
         <a class="logo" href="/">
           <img src="./logo light.svg" alt="Abdeslam Gacemi's logo" />
         </a>
         <ul class="links">
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="" cursor-style="hide-pointer">Who am I</a></li>
+          <li><a href="" cursor-style="hide-pointer">Services</a></li>
+          <li><a href="" cursor-style="hide-pointer">Projects</a></li>
         </ul>
         <div class="buttons">
           <a href="" class="contact" cursor-style="point-pointer">Contact</a>
@@ -27,60 +28,86 @@
     <div class="widget">
       <nav>
         <ul class="links">
-          <li><a href="" class="dark" cursor-style="point-pointer">dark</a></li>
-          <li><a href="" class="lang" cursor-style="point-pointer">EN</a></li>
+          <li><a href="" class="dark" cursor-style="hide-pointer">dark</a></li>
+          <li><a href="" class="lang" cursor-style="hide-pointer">EN</a></li>
         </ul>
       </nav>
     </div>
     <main>
       <section class="hero">
         <div class="content">
-          <div class="banner" cursor-style="point-pointer">
+          <div class="banner" cursor-style="point-pointer" data-aos="fade-up">
             <h1 class="reveal-text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </h1>
+            <div class="illustration">
+              <img src="./illustration.svg" cursor-style="green-pointer"/>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="about">
         <div class="content">
-          <div class="text">
-            <p>
-              I'm <b cursor-style="point-pointer">Abdeslam Gacemi</b>, a
-              full-stack PHP/Javascript web developer with an unwavering passion
-              for all things web development. Ever since a young age, I've been
-              captivated by the magic of creating interactive and dynamic
-              websites, and my journey in this exciting world has only deepened
-              with time. Web development, for me, is not just a profession but a
-              true calling. The ability to craft innovative solutions, weave
-              intricate code, and bring ideas to life through the virtual realm
-              is something that never fails to ignite my creativity.
-            </p>
-            <p>
-              Alongside my love for coding, I also have a strong penchant for
-              web design and graphic design. The art of crafting visually
-              appealing user experiences and translating ideas into stunning
-              visuals has been an exhilarating ride for me. I believe that the
-              perfect fusion of functionality and aesthetics is what truly makes
-              a website shine.
-            </p>
-            <p>
-              Throughout my career, I've had the privilege to collaborate with
-              numerous companies, and each experience has enriched my skillset
-              and expanded my horizons. My time as a freelancer has also allowed
-              me to work on diverse projects, further fueling my passion for
-              versatility and constant learning. On this personal website, I
-              hope to share my knowledge, insights, and maybe even a sprinkle of
-              inspiration with fellow developers, designers, and enthusiasts.
-            </p>
-            <p>
-              Whether you're here to explore the world of web development or
-              simply admire the art of design, I'm excited to connect and learn
-              together. Thank you for visiting, and feel free to reach out if
-              you have any questions or exciting projects in mind. Let's embark
-              on this digital journey and build something extraordinary!
-            </p>
+          <h1 class="section-title" data-aos="fade-down">
+            <span cursor-style="point-pointer">
+              Who am I <span class="outline">Who am I</span>
+            </span>
+          </h1>
+            <div>
+              <p data-aos="fade-right">
+                I'm <b cursor-style="point-pointer">Abdeslam Gacemi</b>, a
+                full-stack PHP/Javascript web developer with an unwavering passion
+                for all things web development. Ever since a young age, I've been
+                captivated by the magic of creating interactive and dynamic
+                websites, and my journey in this exciting world has only deepened
+                with time. Web development, for me, is not just a profession but a
+                true calling. The ability to craft innovative solutions, weave
+                intricate code, and bring ideas to life through the virtual realm
+                is something that never fails to ignite my creativity.
+              </p>
+              <div class="illustration">
+
+              </div>
+            </div>
+            <div>
+              <div class="illustration">
+
+              </div>
+              <p data-aos="fade-left">
+                Alongside my love for coding, I also have a strong penchant for
+                web design and graphic design. The art of crafting visually
+                appealing user experiences and translating ideas into stunning
+                visuals has been an exhilarating ride for me. I believe that the
+                perfect fusion of functionality and aesthetics is what truly makes
+                a website shine.
+              </p>
+            </div>
+            <div>
+              <p data-aos="fade-right">
+                Throughout my career, I've had the privilege to collaborate with
+                numerous companies, and each experience has enriched my skillset
+                and expanded my horizons. My time as a freelancer has also allowed
+                me to work on diverse projects, further fueling my passion for
+                versatility and constant learning. On this personal website, I
+                hope to share my knowledge, insights, and maybe even a sprinkle of
+                inspiration with fellow developers, designers, and enthusiasts.
+              </p>
+              <div class="illustration">
+
+              </div>
+            </div>
+            <div>
+              <div class="illustratio">
+
+              </div>
+              <p data-aos="fade-left">
+                Whether you're here to explore the world of web development or
+                simply admire the art of design, I'm excited to connect and learn
+                together. Thank you for visiting, and feel free to reach out if
+                you have any questions or exciting projects in mind. Let's embark
+                on this digital journey and build something extraordinary!
+              </p>
           </div>
         </div>
       </section>
@@ -92,10 +119,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
       window.addEventListener("load", function () {
-        initCursor();
+        initCursor(default_pointer = "point-pointer", delay = 80);
+        AOS.init({
+          duration: 1200, // values from 0 to 3000, with step 50ms
+          easing: 'ease-out-cubic'
+        });
         let splitWords = function (selector) {
           var elements = document.querySelectorAll(selector);
 
