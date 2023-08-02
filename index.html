@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Cursor.css" />
+    <link rel="stylesheet" href="./hellix.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -58,8 +59,11 @@
           </div>
         </div>
       </section>
-      <div class="mouse">
-        <img src="./mouse.svg" alt="">
+      <div class="mouse" data-aos="fade-up">
+        <div>
+          <img src="./mouse.svg" alt="">
+          <p>Scroll down</p>
+        </div>
       </div>
       <section class="about">
         <div class="content">
@@ -98,32 +102,6 @@
                 a website shine.
               </p>
             </div>
-            <!-- <div>
-              <p data-aos="fade-right">
-                Throughout my career, I've had the privilege to collaborate with
-                numerous companies, and each experience has enriched my skillset
-                and expanded my horizons. My time as a freelancer has also allowed
-                me to work on diverse projects, further fueling my passion for
-                versatility and constant learning. On this personal website, I
-                hope to share my knowledge, insights, and maybe even a sprinkle of
-                inspiration with fellow developers, designers, and enthusiasts.
-              </p>
-              <div class="illustration">
-
-              </div>
-            </div>
-            <div>
-              <div class="illustratio">
-
-              </div>
-              <p data-aos="fade-left">
-                Whether you're here to explore the world of web development or
-                simply admire the art of design, I'm excited to connect and learn
-                together. Thank you for visiting, and feel free to reach out if
-                you have any questions or exciting projects in mind. Let's embark
-                on this digital journey and build something extraordinary!
-              </p>
-          </div> -->
         </div>
       </section>
       <section class="skills">
@@ -133,6 +111,84 @@
               Skills <span class="outline">Skills</span>
             </span>
           </h1>
+          <div class="skills-wrapper">
+            <div class="container">
+              <div class="left" data-aos="fade-right" cursor-style="hide-pointer">
+                <div class="title">
+                  <img src="./backend icon.svg" alt="">
+                  <span>Backend Development</span>
+                </div>
+              </div>
+              <div class="rightTop" data-aos="fade-down" cursor-style="hide-pointer">
+                <div class="title">
+                  <img src="./frontend icon.svg" alt="">
+                  <span>Frontend Development</span>
+                </div>
+              </div>
+              <div class="rightBottom" data-aos="fade-up" cursor-style="hide-pointer">
+                <div class="title">
+                  <img src="./design icon.svg" alt="">
+                  <span>Graphic Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog hero">
+        <div class="content">
+          <div class="banner" cursor-style="point-pointer" data-aos="fade-up">
+            <div class="illustration" data-aos="zoom-in-left">
+              <img src="./iphone.png" cursor-style="green-pointer"/>
+            </div>
+            <div class="text">
+              <h1 class="reveal-text">
+                Visit my blog & enjoy the latest tech news and tutorials
+              </h1>
+              <div class="buttons" data-aos="fade-down">
+                <a href="" class="btn" cursor-style="hide-pointer">Blog</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="content">
+          <div class="background">
+            <video loop autoplay muted>
+              <source  src="./animation.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h1 class="section-title" data-aos="fade-down">
+            <span cursor-style="point-pointer">
+              Projects <span class="outline">Projects</span>
+            </span>
+          </h1>
+        </div>
+      </section>
+      <section class="projects" cursor-style="hide-pointer">
+        <div class="content">
+          <div class="projects-list">
+            <div class="project-item">
+              <h1 class="title">
+                Project 01
+              </h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident recusandae sequi autem officiis animi quibusdam reiciendis, iusto, fuga eius nostrum commodi maxime corporis laborum quae, accusantium dolorem culpa dolorum possimus sint minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?</p>
+            </div>
+            <div class="project-item">
+              <h1 class="title">
+                Project 02
+              </h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident recusandae sequi autem officiis animi quibusdam reiciendis, iusto, fuga eius nostrum commodi maxime corporis laborum quae, accusantium dolorem culpa dolorum possimus sint minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?</p>
+            </div>
+            <div class="project-item">
+              <h1 class="title">
+                Project 03
+              </h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident recusandae sequi autem officiis animi quibusdam reiciendis, iusto, fuga eius nostrum commodi maxime corporis laborum quae, accusantium dolorem culpa dolorum possimus sint minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
