@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./Cursor.css" />
     <link rel="stylesheet" href="./hellix.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -13,12 +19,16 @@
     <header>
       <nav data-aos="fade-down">
         <a class="logo" href="/">
-          <img src="./logo light.svg" alt="Abdeslam Gacemi's logo" cursor-style="hide-pointer"/>
+          <img
+            src="./logo light.svg"
+            alt="Abdeslam Gacemi's logo"
+            cursor-style="hide-pointer"
+          />
         </a>
         <ul class="links">
-          <li><a href="" cursor-style="hide-pointer">Who am I</a></li>
-          <li><a href="" cursor-style="hide-pointer">Skills</a></li>
-          <li><a href="" cursor-style="hide-pointer">Projects</a></li>
+          <li><a href="#whoami" cursor-style="hide-pointer">Who am I</a></li>
+          <li><a href="#skills" cursor-style="hide-pointer">Skills</a></li>
+          <li><a href="#projects" cursor-style="hide-pointer">Projects</a></li>
         </ul>
         <div class="buttons">
           <a href="" class="contact btn-animated" cursor-style="point-pointer">
@@ -32,7 +42,7 @@
         </div>
       </nav>
     </header>
-    <div class="widget">
+    <div class="widget" data-aos="fade-up">
       <nav>
         <ul class="links">
           <li><a href="" class="dark" cursor-style="hide-pointer">dark</a></li>
@@ -46,7 +56,9 @@
           <div class="banner" cursor-style="point-pointer" data-aos="fade-up">
             <div class="text">
               <h1 class="reveal-text">
-                Hello, I'm Abdeslam Gacemi, a <span class="text-secondary">full-stack web developer</span> & <span class="text-secondary">graphic designer</span>
+                Hello, I'm Abdeslam Gacemi, a
+                <span class="text-secondary">full-stack web developer</span> &
+                <span class="text-secondary">graphic designer</span>
               </h1>
               <div class="buttons" data-aos="fade-down">
                 <a href="" class="btn" cursor-style="hide-pointer">Skills</a>
@@ -54,18 +66,18 @@
               </div>
             </div>
             <div class="illustration" data-aos="zoom-in-left">
-              <img src="./illustration.png" cursor-style="green-pointer"/>
+              <img src="./illustration.png" cursor-style="green-pointer" />
             </div>
           </div>
         </div>
       </section>
       <div class="mouse" data-aos="fade-up">
         <div>
-          <img src="./mouse.svg" alt="">
+          <img src="./mouse.svg" alt="" />
           <p>Scroll down</p>
         </div>
       </div>
-      <section class="about">
+      <section class="about" id="whoami">
         <div class="content">
           <h1 class="section-title" data-aos="fade-down">
             <span cursor-style="point-pointer">
@@ -73,64 +85,174 @@
             </span>
           </h1>
           <div class="separator" data-aos="fade-up" data-aos-offset="500"></div>
-            <div>
-              <p data-aos="fade-right">
-                I'm <b cursor-style="point-pointer">Abdeslam Gacemi</b>, a
-                full-stack PHP/Javascript web developer with an unwavering passion
-                for all things web development. Ever since a young age, I've been
-                captivated by the magic of creating interactive and dynamic
-                websites, and my journey in this exciting world has only deepened
-                with time. Web development, for me, is not just a profession but a
-                true calling. The ability to craft innovative solutions, weave
-                intricate code, and bring ideas to life through the virtual realm
-                is something that never fails to ignite my creativity.
-              </p>
-              <div class="illustration" data-aos="fade-left" data-aos-delay="200">
-                <img src="./programming.svg" alt="">
-              </div>
+          <div>
+            <p data-aos="fade-right">
+              I'm <b cursor-style="point-pointer">Abdeslam Gacemi</b>, a
+              full-stack PHP/Javascript web developer with an unwavering passion
+              for all things web development. Ever since a young age, I've been
+              captivated by the magic of creating interactive and dynamic
+              websites, and my journey in this exciting world has only deepened
+              with time. Web development, for me, is not just a profession but a
+              true calling. The ability to craft innovative solutions, weave
+              intricate code, and bring ideas to life through the virtual realm
+              is something that never fails to ignite my creativity.
+            </p>
+            <div class="illustration" data-aos="fade-left" data-aos-delay="200">
+              <img src="./programming.svg" alt="" />
             </div>
-            <div>
-              <div class="illustration" data-aos="fade-right" data-aos-delay="200">
-                <img src="./design.svg" alt="" style="animation-delay: -1s!important;">
-              </div>
-              <p data-aos="fade-left">
-                Alongside my love for coding, I also have a strong penchant for
-                web design and graphic design. The art of crafting visually
-                appealing user experiences and translating ideas into stunning
-                visuals has been an exhilarating ride for me. I believe that the
-                perfect fusion of functionality and aesthetics is what truly makes
-                a website shine.
-              </p>
+          </div>
+          <div>
+            <div
+              class="illustration"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <img
+                src="./design.svg"
+                alt=""
+                style="animation-delay: -1s !important"
+              />
             </div>
+            <p data-aos="fade-left">
+              Alongside my love for coding, I also have a strong penchant for
+              web design and graphic design. The art of crafting visually
+              appealing user experiences and translating ideas into stunning
+              visuals has been an exhilarating ride for me. I believe that the
+              perfect fusion of functionality and aesthetics is what truly makes
+              a website shine.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="content">
           <h1 class="section-title" data-aos="fade-down">
+            <div class="frame spline" cursor-style="hide-pointer">
+              <iframe
+                src="https://my.spline.design/untitled-7de9a88e5a8982facb76c71e221352ce/"
+                frameborder="0"
+                width="100%"
+                height="100%"
+              ></iframe>
+            </div>
             <span cursor-style="point-pointer">
               Skills <span class="outline">Skills</span>
             </span>
           </h1>
           <div class="skills-wrapper">
             <div class="container">
-              <div class="left" data-aos="fade-right" cursor-style="hide-pointer">
+              <div
+                class="left"
+                data-aos="fade-right"
+                cursor-style="hide-pointer"
+              >
                 <div class="title">
-                  <img src="./backend icon.svg" alt="">
+                  <img src="./backend icon.svg" alt="" />
                   <span>Backend Development</span>
                 </div>
+                <div class="skill">
+                  <div class="skill-title">PHP</div>
+                  <ul>
+                    <li>Mastery of Object Oriented Programming</li>
+                    <li>Expertise in MVC architecture</li>
+                    <li>
+                      Familiarity with major PHP frameworks such as LARAVEL and
+                      Slim PHP
+                    </li>
+                    <li>Expertise in WORDPRESS CMS</li>
+                    <li>Unit testing using PHPUnit And Pest packages</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Javascript</div>
+                  <ul>
+                    <li>Wide knowledge around Node js</li>
+                    <li>Familiarity with Express js framework</li>
+                    <li>Expertise in WORDPRESS CMS</li>
+                    <li>Unit testing using PHPUnit And Pest packages</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Databases</div>
+                  <ul>
+                    <li>Knowledge around relational database such as MySql and Postgres</li>
+                    <li>Learning MongoDB as a NoSql Non-relational database</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Extra</div>
+                  <ul>
+                    <li>Version Control using GIT and Github</li>
+                    <li>Clean code best practices</li>
+                    <li>Learning SCRUM methodology</li>
+                  </ul>
+                </div>
               </div>
-              <div class="rightTop" data-aos="fade-down" cursor-style="hide-pointer">
+              <div
+                class="rightTop"
+                data-aos="fade-down"
+                cursor-style="hide-pointer"
+              >
                 <div class="title">
-                  <img src="./frontend icon.svg" alt="">
+                  <img src="./frontend icon.svg" alt="" />
                   <span>Frontend Development</span>
                 </div>
-              </div>
-              <div class="rightBottom" data-aos="fade-up" cursor-style="hide-pointer">
-                <div class="title">
-                  <img src="./design icon.svg" alt="">
-                  <span>Graphic Design</span>
+                <div class="skill">
+                  <div class="skill-title">HTML & CSS</div>
+                  <ul>
+                    <li>Mastery of HTML & CSS</li>
+                    <li>Familiarity with CSS preprocessors such as SASS</li>
+                    <li>Familiarity with CSS libraries such as BOOTSTRAP and TAILWIND</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Javascript</div>
+                  <ul>
+                    <li>Mastery of Javascript base concepts</li>
+                    <li>Familiarity with Major Javascript frameworks & libraries such as Vue and React</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Extra</div>
+                  <ul>
+                    <li>Motion graphics using Adobe After Effects</li>
+                    <li>Learning 3D design and modeling with Blender and Spline</li>
+                  </ul>
                 </div>
               </div>
+              <div
+                class="rightBottom"
+                data-aos="fade-up"
+                cursor-style="hide-pointer"
+              >
+                <div class="title">
+                  <img src="./design icon.svg" alt="" />
+                  <span>Graphic Design</span>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Adobe Illustrator</div>
+                  <ul>
+                    <li>Logo design and branding</li>
+                    <li>Illustration drawing</li>
+                    <li>Icon design</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Adobe Photoshop</div>
+                  <ul>
+                    <li>Image retouching and photo manipulation</li>
+                    <li>Image composition</li>
+                  </ul>
+                </div>
+                <div class="skill">
+                  <div class="skill-title">Figma & Adobe XD</div>
+                  <ul>
+                    <li>UI design and prototyping</li>
+                    <li>Wireframing and animating the UI</li>
+                  </ul>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -139,7 +261,7 @@
         <div class="content">
           <div class="banner" cursor-style="point-pointer" data-aos="fade-up">
             <div class="illustration" data-aos="zoom-in-left">
-              <img src="./iphone.png" cursor-style="green-pointer"/>
+              <img src="./iphone.png" cursor-style="green-pointer" />
             </div>
             <div class="text">
               <h1 class="reveal-text">
@@ -149,15 +271,14 @@
                 <a href="" class="btn" cursor-style="hide-pointer">Blog</a>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="projects">
         <div class="content">
           <div class="background">
             <video loop autoplay muted>
-              <source  src="./animation.mp4" type="video/mp4">
+              <source src="./animation.mp4" type="video/mp4" />
             </video>
           </div>
           <h1 class="section-title" data-aos="fade-down">
@@ -171,22 +292,34 @@
         <div class="content">
           <div class="projects-list">
             <div class="project-item">
-              <h1 class="title">
-                Project 01
-              </h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident recusandae sequi autem officiis animi quibusdam reiciendis, iusto, fuga eius nostrum commodi maxime corporis laborum quae, accusantium dolorem culpa dolorum possimus sint minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?</p>
+              <h1 class="title">Project 01</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Provident recusandae sequi autem officiis animi quibusdam
+                reiciendis, iusto, fuga eius nostrum commodi maxime corporis
+                laborum quae, accusantium dolorem culpa dolorum possimus sint
+                minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?
+              </p>
             </div>
             <div class="project-item">
-              <h1 class="title">
-                Project 02
-              </h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident recusandae sequi autem officiis animi quibusdam reiciendis, iusto, fuga eius nostrum commodi maxime corporis laborum quae, accusantium dolorem culpa dolorum possimus sint minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?</p>
+              <h1 class="title">Project 02</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Provident recusandae sequi autem officiis animi quibusdam
+                reiciendis, iusto, fuga eius nostrum commodi maxime corporis
+                laborum quae, accusantium dolorem culpa dolorum possimus sint
+                minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?
+              </p>
             </div>
             <div class="project-item">
-              <h1 class="title">
-                Project 03
-              </h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident recusandae sequi autem officiis animi quibusdam reiciendis, iusto, fuga eius nostrum commodi maxime corporis laborum quae, accusantium dolorem culpa dolorum possimus sint minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?</p>
+              <h1 class="title">Project 03</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Provident recusandae sequi autem officiis animi quibusdam
+                reiciendis, iusto, fuga eius nostrum commodi maxime corporis
+                laborum quae, accusantium dolorem culpa dolorum possimus sint
+                minima ut nemo. Soluta voluptatibus corporis culpa ipsa dolores?
+              </p>
             </div>
           </div>
         </div>
@@ -199,14 +332,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script>
       window.addEventListener("load", function () {
-        initCursor(default_pointer = "point-pointer", delay = 80);
+        initCursor((default_pointer = "point-pointer"), (delay = 80));
         AOS.init({
           duration: 1200, // values from 0 to 3000, with step 50ms
-          easing: 'ease-out-cubic'
+          easing: "ease-out-cubic",
         });
         let splitWords = function (selector) {
           var elements = document.querySelectorAll(selector);

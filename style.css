@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1200px;
+  --max-width: 1100px;
   --violet: #9de756;
   --ternary: #56e789;
   --violet-rgb: 157, 231, 86;
@@ -27,6 +27,24 @@
   border-radius: 12px;
 }
 
+section {
+  scroll-margin-top: 200px;
+}
+
+.frame.spline {
+  position: relative;
+}
+.frame.spline::after {
+  content: "";
+  width: 300px;
+  height: 100px;
+  background: var(--dark2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+
 /* resets */
 
 * {
@@ -35,6 +53,7 @@
   box-sizing: border-box;
   font-family: Hellix, Arial, sans-serif;
   color: var(--gray);
+  scroll-behavior: smooth;
 
   /* cursor: auto; */
 }
@@ -59,7 +78,7 @@ a {
   cursor: pointer;
 }
 
-li {
+ul, ol, li {
   list-style-type: none;
 }
 
@@ -425,24 +444,41 @@ body[data-aos-easing="ease-out-cubic"] [data-aos] {
 }
 
 section.skills {
-  margin-top: 120px;
+  margin-top: 180px;
   background: url("./paint2.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   padding-block: 40px;
 }
 
 section.skills .content .container {
-  height: 600px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content;
   gap: 15px 15px;
   grid-auto-flow: row;
   grid-template-areas:
     "left rightTop"
     "left rightBottom";
+}
+
+section.skills .section-title {
+  position: relative;
+}
+
+section.skills .spline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+  transform: translateY(-70%);
+}
+
+section.skills .spline iframe {
+  height: 400px;
 }
 
 .left {
@@ -457,14 +493,63 @@ section.skills .content .container {
   grid-area: rightBottom;
 }
 
-.left, .rightTop, .rightBottom {
+.left,
+.rightTop,
+.rightBottom {
   background-color: var(--dark);
   backdrop-filter: blur(6px) saturate(200%);
   -webkit-backdrop-filter: blur(14px) saturate(200%);
   background-color: var(--dark-opaque);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.193);
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+}
+
+section.skills .skill .skill-title {
+  color: var(--violet);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section.skills .skill  {
+  margin-bottom: 20px;
+}
+
+section.skills .skill ul {
+  position: relative;
+}
+
+section.skills .skill ul::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1px;
+  height: calc(100% - 12px);
+  background-color: var(--light);
+}
+
+section.skills .skill li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: .8;
+}
+
+section.skills .skill li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background-color: var(--light);
 }
 
 section.skills .content .container > div .title {
@@ -472,6 +557,7 @@ section.skills .content .container > div .title {
   font-weight: bold;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 section.skills .content .container > div .title img {
@@ -484,7 +570,7 @@ section.blog {
 }
 
 section.blog .banner {
-  height: 290px!important;
+  height: 290px !important;
 }
 
 section.blog .banner img {
@@ -492,8 +578,8 @@ section.blog .banner img {
 }
 
 section.blog .content .banner .text {
-  margin-right: 0!important;
-  margin-left: 100px!important;
+  margin-right: 0 !important;
+  margin-left: 100px !important;
 }
 
 section.video .background video {
@@ -524,7 +610,7 @@ section.video .content {
 }
 
 section.video .content .section-title {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
   transform: translateY(15px);
 }
 
@@ -535,7 +621,7 @@ section.projects {
 
 section.projects::selection {
   /* background-color: #414F35; */
-  background-color: var(--dark)!important;
+  background-color: var(--dark) !important;
 }
 
 section.projects .content {
@@ -545,7 +631,7 @@ section.projects .content {
 }
 
 section.projects .content * {
-  color: var(--dark)!important;
+  color: var(--dark) !important;
 }
 
 section.projects .content .projects-list {
@@ -554,7 +640,7 @@ section.projects .content .projects-list {
 }
 
 section.projects .content .projects-list::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 2px;
   background-color: var(--dark);
@@ -570,7 +656,7 @@ section.projects .content .projects-list .project-item {
 
 section.projects .content .projects-list .project-item::before {
   margin-bottom: 40px;
-  content: '';
+  content: "";
   height: 100%;
   width: 10px;
   height: 10px;
